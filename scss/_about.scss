@@ -1,0 +1,28 @@
+    
+.about{
+    padding: 10px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    figure{
+      width: 30%;
+      padding: 20 20px; 
+      display: 	flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img{
+        border: solid $white 1px;
+      }
+      figcaption{
+        color: $keyColor;
+        font-size: $textMd;
+        font-weight: $textLight;
+      }
+    }
+    
+    }
+
+ 
+ 
+ 
+

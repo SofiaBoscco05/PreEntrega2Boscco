@@ -1,5 +1,7 @@
 *.log
 *.map
 *.vscode
-mode_modules/
+node_modules/
 envio.php
+*.ia
+*.map

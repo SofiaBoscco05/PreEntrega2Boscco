@@ -1,0 +1,126 @@
+
+.filters{
+    padding: 0 20px 30px 30px;
+    span{
+        display: block;
+        color: $keyColor;
+        margin: 10px 0;
+        letter-spacing: 1px;
+        font-size: $textSm;
+        font-weight: $textLight;
+        label{
+            font-size: $textSm;
+            font-weight: $textLight;
+        }
+        select{
+            color:$white;
+            border: none;
+            background-color: $mainColor;
+            margin-bottom: 15px;
+            font-size: $textSm;
+            font-weight: $textLight;
+        }
+    }
+}
+
+
+
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 0;
+    button{
+        margin-left: 10px;
+        background-color: $mainColor;
+        color: $white;
+        padding: 6px;
+        border: none;
+        border-radius: 3px;
+        &:hover{
+            cursor: pointer;
+            background-color: $darkColor;
+        }   
+    }
+    input{
+        padding: 6px;
+        border-radius: 3px;
+        border: none;
+        background-color: $white;
+    }
+}
+
+
+
+
+
+.tienda{
+    display: grid;
+    grid-template-columns: 20% repeat(2,1fr);
+    grid-template-rows: 80px repeat(3,300px);
+    grid-template-areas: 
+    "actions actions actions"
+    "filters prod1 prod1"
+    "filters prod2 prod3"
+    "filters prod2 prod4";
+    gap: 5px;
+    padding: 15px;
+  
+}
+
+    .tienda .actions{
+        padding: 0 30px;
+        grid-area: actions;
+    }
+
+    .tienda .filters{
+      grid-area: filters;
+    }
+
+
+
+    .tienda .prod1{
+      grid-area: prod1;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0 80px;
+    }
+
+    .tienda .prod1 p{
+        width: 60%;
+        margin-left: 20px;
+    }
+    
+
+    .tienda .prod2{
+        grid-area: prod2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 80px;
+    }
+
+    .tienda .prod2 p{
+        margin-left: 20px;
+        
+    }
+
+    .tienda .prod3{
+        grid-area: prod3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tienda .prod4{
+        grid-area: prod4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+

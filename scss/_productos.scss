@@ -1,0 +1,40 @@
+.products-home{
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    figure{
+        width: 30%;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        figcaption{
+            color: $secondaryColor;
+            font-size: $textMd;
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            border: none;
+            background-color: $darkColor;
+            padding: 6px;
+            color: $white;
+            border-radius: 4px;
+            margin: 10px 0;
+            &:hover{
+                cursor: pointer;
+                background-color: $mainColor;
+            }
+        }
+    }
+}
+   
+    
+    
+   
+    
+
